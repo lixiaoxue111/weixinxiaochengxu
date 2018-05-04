@@ -1,0 +1,15 @@
+<!--pages/details1/details1.wxml-->
+<!-- <text>pages/details1/details1.wxml</text> -->
+<scroll-view class='page'>
+<!-- <view class="header">
+  <text>失物详情</text>
+</view> -->
+<image class='logo' src="../../image/a3.jpg"></image>
+<text>
+模块: 手机
+发布时间: 2018-04-29
+如何取回: 请失主联系q:1149856883
+描述: 在丹青619教室捡到一部手机
+</text>
+<button bindtap="apply">认领</button>
+</scroll-view>

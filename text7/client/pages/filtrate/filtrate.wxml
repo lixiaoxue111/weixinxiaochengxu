@@ -1,0 +1,56 @@
+<!--pages/filtrate/filtrate.wxml-->
+<!-- <text>pages/filtrate/filtrate.wxml</text> -->
+<!-- <view class='header'>
+<text class='header-text'>筛选</text>
+</view> -->
+
+<view class='classify'>
+<text class='classfy-text'>物品分类</text>
+</view>
+
+<view>
+
+<ul>
+<li>一卡通</li>
+<li>身份证</li>
+<li>钱包</li>
+</ul>
+
+ <ul>
+<li>银行卡</li>
+<li>充电宝</li>
+<li>手机</li>
+</ul>
+
+<ul>
+<li>U盘</li>
+<li>书籍</li>
+<li>钥匙</li>
+</ul>
+
+<ul>
+<li>服装</li>
+<li>首饰</li>
+<li>眼镜</li>
+</ul>
+
+<ul>
+<li>体育器材</li>
+<li>数码配件</li>
+<li>其他</li>
+</ul> 
+
+</view>
+
+<view>
+<text class='time'>丢失时间</text>
+</view>
+<view class='time-text'>
+<input type='text'></input>
+</view>
+
+<view>
+<button>确定</button>
+<button>重置</button>
+<button bindtap='toFind'>退出</button>
+</view>

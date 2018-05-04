@@ -1,0 +1,73 @@
+<!--pages/post/post.wxml-->
+<!-- <text>pages/post/post.wxml</text> -->
+<view class="header">
+  <text>消息发布墙</text>
+</view>
+
+<view class='post'>
+  <text>物品类型 *</text>
+  <view class='type'>
+
+  <view class="type-text">
+    <input type="text" />
+  </view>
+  <view pd-menu>
+  <image class='type-logo' src='../../image/下拉框.png'></image>
+  </view>
+ </view>
+ </view>
+
+<view class='post'>
+ <text> 发布日期 *</text>
+  <view class='date'>
+
+  <view class="date-text">
+    <input type="text" />
+  </view>
+  <view pd-menu>
+  <!-- <text class='date-border'> -->
+  <image class='date-logo' src='../../image/日历.png'></image>
+  <!-- </text> -->
+  </view>
+ </view>
+ </view>
+
+
+<view class='post'>
+  <text>物品描述 </text>
+  <view class='describe'>
+
+  <view class="describe-text">
+    <input type="text" />
+  </view>
+ </view>
+ </view>
+
+ <view class='post'>
+  <text >失主如何取回 *</text>
+  <view class='get'>
+
+  <view class="get-text">
+    <input type="text" />
+  </view>
+ </view>
+ </view>
+
+ <view class="uploader">
+        <view class="uploader-text" bindtap="doUpload">
+            <text>上传图片</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+            <image
+                class="uploader-image"
+                src="{{imgUrl}}"
+                mode="aspectFit"
+                bindtap="previewImg"
+            ></image>
+        </view>
+    </view>
+<navigator url='/pages/Find/Find'>
+ <button class='sure' bindtap='post'>
+ <text>确认发布</text>
+ </button>
+ </navigator>

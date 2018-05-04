@@ -1,0 +1,50 @@
+<!--pages/Find/Find.wxml-->  
+
+<view class='search'>
+    <!-- <form action="" >   -->
+   
+    <navigator url="/pages/filtrate/filtrate"> <image src='../../image/列表.png' class='search-classify'/></navigator>
+  <view class="search-text">
+    <input type="text" />
+  </view>
+  <view>
+    <button class="search-btn">搜索</button>
+  </view>
+
+   <!-- </form>  -->
+ </view>
+<view  class='lost'>
+
+ <view wx:for="{{lostItem}}"  class='flex-item'>
+ <view>
+ <view >
+    <navigator url='/pages/details1/details1'><image src='{{item.logo}}' class='lost-logo'/>
+    </navigator>
+  </view>
+  <view class='item-list'>
+    <text>模块：</text> {{item.classify}}
+    <view>
+      {{item.postTime}}
+    </view>
+    <view>
+    {{item.retrieve}}
+    </view>
+    <view>
+    {{item.describe}}
+    </view> 
+  </view>
+
+ </view>
+  
+</view> 
+</view>
+
+<view class='bt'>
+<!-- <navigator url='#'> -->
+<button >首页</button>
+<!-- </navigator> -->
+ <!-- <navigator url='/pages/post/post'>  -->
+<button bindtap="toPost">发布</button> 
+ <!-- </navigator>  -->
+
+</view>

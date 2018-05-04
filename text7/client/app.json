@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/Find/Find",    
+    "pages/filtrate/filtrate",
+    "pages/post/post",
+    "pages/details1/details1",
+    "pages/index/index",
+    "pages/addCgi/addCgi"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  }
+}
